@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple multi-lang</title>
+</head>
+<body>
+
+  <h1>Ejemplo de sitio multi-idioma (plain html)</h1>
+
+  Seleccione un idioma
+  <select name="language" id="lang" onchange="selectLang();">
+    <option value="es" selected="selected">Español</option>
+    <option value="en">Inglés</option>
+    <option value="fr">Francés</option>
+    <option value="ko">코아 노</option>
+    <option value="jp">日本語</option>
+  </select>
+
+  <hr>
+  <article>
+    <h1 keyword="title" class="keyword"><!-- texto --></h1>
+    <h3 keyword="description" class="keyword"><!-- texto --></h3>
+    <button type="button" name="button" keyword="button" class="keyword"><!-- texto --></button>
+  </article>
+  <br>
+
+  <article class="">
+    <hr>
+    <a href="app.js">Ver funciones JS »</a>
+    <br>
+    <a href="languages.js">Ver array de idiomas »</a>
+  </article>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+  <script src="languages.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+
+</body>
+</html>
